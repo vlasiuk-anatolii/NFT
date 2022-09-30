@@ -62,123 +62,33 @@
           
           <div class="silver__box_subtitle_cross">
             <div class="silver__subtitle">
-              <p>Available for purchase: 100 NFT</p>
+              <p id="silver-counter">Available for purchase: 100 NFT</p>
             </div>
-            <div class="silver__box_cross">
-              <a
-                href="#"
-                id="silver-cross"
-                class="silver__cross">
-              </a>
-            </div>
+            <div class="silver__box_cross accordion"></div>
           </div>
           <div class="silver__togglerbox">
             <div class="silver__toggler toggler">
-              <input type="checkbox" id="toggler"/>
-                <label for="toggler" class="toggler__label">
+              <input type="checkbox" id="toggler-silver"/>
+                <label for="toggler-silver" class="toggler__label">
                   <div class="toggler__slider"></div>
                 </label>
             </div>
-            <p class="silver__toggler_text">Show sold posters</p>
+            <p id="toggler-silver-text" class="silver__toggler_text">Show sold posters</p>
           </div>
 
-          <div class="silver__arrow_box arrow">
-            <img class="arrow__up" src="./images/arrow_up.svg">
-            <!-- <img class="arrow__down" src="./images/arrow_down.svg"> -->
+          <div class="silver__arrow_box accordion_mobil">
+            
           </div>
-          <div class="silver__youget">
-            <p>You get:<br>
-              -  NFT poster + sponsor logo on web page</p>
-          </div>
-
-          <div class="silver__cards_box">
-            <div class="silver__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-                           
-              <div class="silver_popup_form popup_form">
-                <div class="card__button">
-                  <a href="#popup-form" class="card__link">Buy NFT</a>
-                </div>
-
-                <div id="popup-form" class="popup_form__container">
-                  <div class="popup_form__content">
-                    <a href="#" class="popup_form__close">&times;</a>
-                    <h1>Ready to purchase?</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> tincidunt quam convallis a lacus consequat, ultrices.</p>
-                    <form action="#" class="popup_form form">
-                      <label class="form__label">
-                        <input
-                          id="first-name"
-                          name="first_name"
-                          type="text"
-                          class="form__field"
-                          placeholder="First Name"
-                          required
-                        >
-                      </label>
-                      <label class="form__label">
-                        <input
-                          id="last-name"
-                          name="last_name"
-                          type="text"
-                          class="form__field"
-                          placeholder="Last Name"
-                          required
-                        >
-                      </label>
-
-                      <label class="form__label">
-                        <input
-                          id="email"
-                          name="email"
-                          type="email"
-                          class="form__field"
-                          placeholder="Email@gmail.com"
-                          required
-                        >
-                      </label>
-
-                      <label class="form__label">
-                        <input
-                          id="phone"
-                          name="phone"
-                          type="text"
-                          class="form__field"
-                          placeholder="+48 328 4870 09 27"
-                          required
-                        >
-                      </label>
-                      <div class="form__images">
-                        <div class="form__master"></div>
-                        <div class="form__visa"></div>
-                      </div>
-                      
-                      <div class="card__button form__button">
-                        <a href="#popup-thank" class="card__link form__link">Buy NFT</a>
-                      </div>
-                    </form>
-                  </div>
-                  
-                </div>
-
-                <div id="popup-thank" class="popup_thank__container">
-                  <div class="popup_thank__content">
-                    <h1>Thanks!</h1>
-                    <p>The purchase of <strong>Silver NFT Alexey Botvinov</strong> has<br> been successfully completed.</p>
-                    <div class="card__button popup_thank__button">
-                      <a href="#1" class="card__link popup_thank__link">OK</a>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-
+          
+          <div id="silver" class="silver__panel">
+            <div class="silver__youget">
+              <p>You get:<br>
+                -  NFT poster + sponsor logo on web page</p>
+            </div>
+            <div id="silver-cards-box" class="silver__cards_box">
             </div>
           </div>
-        </div>
+       </div>
       </section>
 
       <section class="gold">
@@ -186,9 +96,13 @@
           <div class="gold__title">
             Gold NFT
           </div>
-          <div class="gold__subtitle">
-            <p>Available for purchase: 10 NFT</p>
-          </div>
+
+          <div class="gold__box_subtitle_cross">
+            <div class="gold__subtitle">
+              <p id="gold-counter">Available for purchase: 10 NFT</p>
+            </div>
+            <div class="gold__box_cross accordion"></div>
+         </div>
           <div class="gold__togglerbox">
             <div class="gold__toggler toggler">
               <input type="checkbox" id="toggler-gold"/>
@@ -196,80 +110,20 @@
                   <div class="toggler__slider"></div>
                 </label>
             </div>
-            <p class="gold__toggler_text">Show sold posters</p>
+            <p id="toggler-gold-text" class="gold__toggler_text">Show sold posters</p>
           </div>
 
-          <div class="gold__arrow_box arrow">
-            <!-- <img class="arrow__up" src="./images/arrow_up.svg"> -->
-            <img class="arrow__down" src="./images/arrow_down.svg">
+          <div class="gold__arrow_box accordion_mobil"></div>
+          
+          <div id="gold" class="gold__panel">
+            <div class="gold__youget">
+              <p>You get:<br>
+                -  NFT poster + sponsor logo on web page</p>
+            </div>
+            <div id="gold-cards-box" class="gold__cards_box">
+            </div>
           </div>
-          <!-- <div class="gold__youget">
-            <p>You get:<br>
-              -  NFT poster + sponsor logo on web page</p>
-          </div> -->
-
-          <!-- <div  class="gold__cards_box">
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="gold__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-          </div> -->
-        </div>
+       </div>
       </section>
 
       <section class="platinum">
@@ -277,9 +131,14 @@
           <div class="platinum__title">
             Platinum NFT
           </div>
+
+          <div class="silver__box_subtitle_cross">
+          
           <div class="platinum__subtitle">
-            <p>Available for purchase: 3 NFT</p>
+            <p id="platinum-counter">Available for purchase: 3 NFT</p>
           </div>
+          <div class="platinum__box_cross accordion"></div>
+        </div>
           <div class="platinum__togglerbox">
             <div class="platinum__toggler toggler">
               <input type="checkbox" id="toggler-platinum"/>
@@ -287,81 +146,87 @@
                   <div class="toggler__slider"></div>
                 </label>
             </div>
-            <p class="platinum__toggler_text">Show sold posters</p>
+            <p id="toggler-platinum-text"class="platinum__toggler_text">Show sold posters</p>
           </div>
 
-          <div class="platinum__arrow_box arrow">
-            <!-- <img class="arrow__up" src="./images/arrow_up.svg"> -->
-            <img class="arrow__down" src="./images/arrow_down.svg">
-          </div>
-          <!-- <div class="platinum__youget">
-            <p>You get:<br>
-              -  NFT poster + sponsor logo on web page</p>
-          </div>
-
-          <div hidden class="platinum__cards_box">
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
+          <div class="platinum__arrow_box accordion_mobil"></div>
+          
+          <div id="platinum" class="platinum__panel">
+            <div class="platinum__youget">
+              <p>You get:<br>
+                -  NFT poster + sponsor logo on web page</p>
             </div>
-
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
-            </div>
-
-            <div class="platinum__card card">
-              <div class="card__imagebox">
-                <img class="card__image" src="./images/card_image.png">
-              </div>
-              <div class="card__price">50₣</div>
-              <button class="card__button">
-                Buy NFT
-              </button>
+            <div id="platinum-cards-box" class="platinum__cards_box">
             </div>
           </div>
-        </div> -->
+       </div>
       </section>
+
+      <div id="popup-form" class="popup_form__container">
+        <div class="popup_form__content">
+          <a href="#" class="popup_form__close">&times;</a>
+          <h1>Ready to purchase?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> tincidunt quam convallis a lacus consequat, ultrices.</p>
+          <form id="form" action="#" class="popup_form form">
+              <input
+                id="first-name"
+                name="first_name"
+                type="text"
+                class="form__field"
+                placeholder="First Name"
+                required
+              >
+            
+            
+              <input
+                id="last-name"
+                name="last_name"
+                type="text"
+                class="form__field"
+                placeholder="Last Name"
+                required
+              >
+           
+            
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form__field"
+                placeholder="Email@gmail.com"
+                required
+              >
+            
+              <input
+                id="phone"
+                name="phone"
+                type="text"
+                class="form__field"
+                placeholder="+48 328 4870 09 27"
+                required
+              >
+            
+            <div class="form__images">
+              <div class="form__master"></div>
+              <div class="form__visa"></div>
+            </div>
+
+            <button id="btnForm" type="submit" class="form__button">Buy NFT</button>
+          </form>
+        </div>
+      </div>
+
+
+        <div id="popup-thank" class="popup_thank__container">
+          <div class="popup_thank__content">
+            <h1>Thanks!</h1>
+            <p>The purchase of <strong>Silver NFT Alexey Botvinov</strong> has<br> been successfully completed.</p>
+            <div class="card__button popup_thank__button">
+              <a href="#" class="card__link popup_thank__link">OK</a>
+            </div>
+          </div>
+        </div>
+
     </main>
   </body>
 </html>
