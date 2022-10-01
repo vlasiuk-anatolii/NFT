@@ -2,7 +2,7 @@
   "name": "vanilla_js_template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html --open",
@@ -10,7 +10,7 @@
     "lint:css": "stylelint **/*.scss",
     "lint:js": "eslint src/scripts/main.js",
     "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
-    "build": "rm -rf dist && parcel build ./src/index.html --public-url ./ --no-content-hash",
+    "build": "parcel build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
