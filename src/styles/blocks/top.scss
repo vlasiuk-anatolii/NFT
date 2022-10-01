@@ -1,0 +1,27 @@
+.top {
+  &__box {
+    color: $color-text;
+    text-align: center;
+    border-bottom: solid 2px $fon-page;
+  }
+
+  &__title {
+    @extend %title;
+    margin: 80px 21px 40px;
+    
+    @include onDesktop {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    margin-bottom: 61px;
+    
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+
+.toggler {
+  &__label {
+    background-color: $color-noactive-fon-toggler;
+    width:30px;
+    height: 14px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+    @include onDesktop {
+      width:36px;
+      height: 18px;
+    }
+  }
+  
+  input {
+    display: none;
+  }
+  
+  &__slider {
+    height: 12px;
+    width: 12px;
+    background-color: $color-noactive-circle-toggler;
+    border-radius: 12px;
+    margin: 1px;
+    transition-duration: $transition-duration; 
+
+    @include onDesktop {
+      height: 16px;
+      width: 16px;
+    }
+  }
+  
+  input:checked + &__label {
+    background-color: $color-active-fon-toggler;
+  }
+  
+  input:checked + &__label > &__slider {
+    background-color: $color-active-circle-toggler;
+    align-self: flex-end;
+  }
+}

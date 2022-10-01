@@ -1,0 +1,41 @@
+.for_brand {
+  margin-bottom: 80px;
+
+  &__box {
+    background-image: url(../images/for_brand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $color-text;
+    border: solid 1px $fon-page;
+    filter: grayscale(50%);
+    width: 100%;
+    height: 100%;
+       
+    @include onDesktop {
+      background-image: url(../images/for_barnd_desktop.png);
+    }
+  }
+
+  &__bold_subtitle {
+    @extend %bold_subtitle;
+    margin: 40px 120px 20px 21px;
+    
+    @include onDesktop {
+      margin: 72px 20px 64px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    padding-left: 40px;
+    margin-bottom: 61px;
+
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}

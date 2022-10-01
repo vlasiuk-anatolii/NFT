@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel ./src/index.html --open",
-    "lint:html": "linthtml ./src/index.html",
-    "lint:css": "stylelint **/*.css",
-    "lint:js": "eslint ./src",
+    "start": "parcel src/index.html --open",
+    "lint:html": "linthtml src/index.html",
+    "lint:css": "stylelint **/*.scss",
+    "lint:js": "eslint src/scripts/main.js",
     "lint": "concurrently \"npm run lint:html\" \"npm run lint:css\" \"npm run lint:js\"",
     "build": "rm -rf dist && parcel build ./src/index.html --public-url ./ --no-content-hash",
     "predeploy": "npm run build",
@@ -27,8 +27,11 @@
     "husky": "^8.0.1",
     "parcel": "^1.12.3",
     "sass": "^1.55.0",
-    "stylelint": "^14.12.1",
+    "stylelint": "^14.13.0",
     "stylelint-config-standard": "^28.0.0",
     "stylelint-config-standard-scss": "^5.0.0"
+  },
+  "dependencies": {
+    "stylelint-scss": "^4.3.0"
   }
 }

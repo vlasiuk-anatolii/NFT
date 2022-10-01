@@ -1,0 +1,18 @@
+.active {
+  @include onDesktop {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/plus_yellow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(45deg);
+    transition: $transition-duration ease-out;
+    margin-right: 87px;
+    margin-top: 3px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

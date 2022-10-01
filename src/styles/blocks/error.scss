@@ -1,0 +1,17 @@
+.error {
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+  @extend %bold_subtitle;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text;
+  
+  @include onDesktop {
+    position: relative;
+    bottom: 50px;
+    left: 89px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+}

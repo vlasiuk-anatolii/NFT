@@ -1,0 +1,132 @@
+.silver, .gold, .platinum {
+  margin: 0 20px;
+  
+  &__panel {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-duration ease-out;
+  }
+
+  &__box {
+    background-color: $fon-page;
+    box-shadow: inset 1px 0px 30px 0.5px rgba(255,255,255,0.24);
+    border-radius: 20px;
+    margin: 30px 20px;
+    border: 1px solid $fon-page;
+    
+    @include onDesktop {
+      margin: 0 auto 80px;
+      max-width: 1074px;
+    }
+  }
+
+  &__box_subtitle_cross {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box_cross {
+    display: none;
+    
+    @include onDesktop {
+      display: block;
+      width: 27px;
+      height: 27px;
+      background-image: url("../images/plus_yellow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: $transition-duration ease-out;
+      margin-right: 84px;
+     
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  &__title {
+    @extend %title;
+    color: $color-text;
+    text-align: center;
+    padding: 19px 48px 10px;
+    
+    @include onDesktop {
+      font-size: 40px;
+      line-height: 44px;
+      text-align: left;
+      margin-top: 30px
+    }
+  }
+
+  &__subtitle {
+    @extend %subtitle;
+    color: $color-text;
+    text-align: center;
+    margin: 0 0 24px 10px;
+    
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: left;
+      margin-left: 50px;
+    }
+  }
+
+  &__togglerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    
+    @include onDesktop {
+      justify-content: left;
+      margin: 0 50px 80px;
+    }
+  }
+  
+  &__toggler_text {
+    @extend %toggler_text;
+    color: $color-text;
+    margin-left: 9px;
+  }
+  
+  &__youget {
+    @extend %bold_subtitle;
+    color: $color-text;
+    margin: 0 12px 24px;
+    
+    @include onDesktop {
+      font-size: 24px;
+      line-height: 29px;
+      margin-left: 50px;
+    }
+  }
+
+  &__cards_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  &__arrow_box {
+    background-image: url(../images/arrow_down.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    margin: 0 auto 25px;
+    transition: $transition-duration;
+    
+    &:hover {
+      cursor: pointer;
+    }
+      
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

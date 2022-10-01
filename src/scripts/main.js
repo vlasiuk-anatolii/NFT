@@ -14,10 +14,26 @@ function accord(array, classActiveName) {
 
       const kind = this.classList[0].match(/silver|gold|platinum/);
       const panel = document.getElementById(kind[0]);
+      const section = document.getElementsByClassName(`${kind[0]}__box`);
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
+
+        section[0].style.boxShadow = 'inset 1px 0px 30px 0.5px rgba(255,255,255,0.24)';
       } else {
         panel.style.maxHeight = `${panel.scrollHeight}px`;
+        switch (kind[0]) {
+          case 'silver':
+            section[0].style.boxShadow = '1px 3px 49px 13px rgba(255,244,242,0.61)';
+            break;
+          case 'gold':
+            section[0].style.boxShadow = '1px 3px 49px 13px rgba(255,234,23,0.61)';
+            break;
+          case 'platinum':
+            section[0].style.boxShadow = '1px 3px 49px 13px rgba(255,211,209,0.61)';
+            break;
+          default:
+            break;
+        }
       }
     });
   }

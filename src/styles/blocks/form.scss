@@ -1,0 +1,85 @@
+.form {
+  &__field {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 290px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: $color-bg-form-field;
+    @extend %subtitle;
+    font-size: 18px;
+    line-height: 20px;
+    color: $fon-page;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    
+    @include onDesktop {
+      width: 570px;
+      height: 80px;
+      font-size: 24px;
+      line-height: 29px;
+      padding-left: 19px;
+      margin-bottom: 20px;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  
+    &:hover {
+      border-color: $color-noactive-close;
+    }
+  
+    &:focus {
+      border-color: $fon-page;
+      opacity: 1;
+      outline: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 80px;
+    @extend %bold_subtitle;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-text;
+    padding-top: 13px;
+    width: 246px;
+    height: 60px;
+    background-color: $color-button-fon;
+    border-radius: 40px;
+    transition: $transition-duration;
+        
+    &:hover {
+      cursor: pointer;
+      background-color: $color-text;
+      color: $color-button-fon;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    @include onDesktop {
+      margin-bottom: 61px;
+    }
+  }
+
+  &__master {
+    width: 63px;
+    height: 63px;
+    background-image: url(../images/maestro.png);
+  }
+
+  &__visa {
+    width: 63px;
+    height: 63px;
+    background-image: url(../images/visa.png);
+  }
+}
