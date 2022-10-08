@@ -84,7 +84,7 @@ a {
 
 @font-face {
   font-family: "Migra";
-  src: url("/Migra-Extrabold.2134eafb.woff") format("woff");
+  src: url("Migra-Extrabold.2134eafb.woff") format("woff");
   font-weight: 800;
 }
 @media (min-width: 740px) {
@@ -126,7 +126,7 @@ a {
   }
 }
 .for_music__box {
-  background-image: url(/for_music.eb36ad97.png);
+  background-image: url(for_music.eb36ad97.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,7 +137,7 @@ a {
 }
 @media (min-width: 740px) {
   .for_music__box {
-    background-image: url(/for_music_mirror.d755ad88.png);
+    background-image: url(for_music_mirror.d755ad88.png);
   }
 }
 .for_music__bold_subtitle {
@@ -164,7 +164,7 @@ a {
   margin-bottom: 80px;
 }
 .for_brand__box {
-  background-image: url(/for_brand.07798671.png);
+  background-image: url(for_brand.07798671.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -176,7 +176,7 @@ a {
 }
 @media (min-width: 740px) {
   .for_brand__box {
-    background-image: url(/for_barnd_desktop.c6fff16c.png);
+    background-image: url(for_barnd_desktop.c6fff16c.png);
   }
 }
 .for_brand__bold_subtitle {
@@ -241,7 +241,7 @@ a {
     display: block;
     width: 27px;
     height: 27px;
-    background-image: url("/plus_yellow.5458f657.svg");
+    background-image: url("plus_yellow.5458f657.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@ a {
   gap: 10px;
 }
 .silver__arrow_box, .gold__arrow_box, .platinum__arrow_box {
-  background-image: url(/arrow_down.b90f11c3.svg);
+  background-image: url(arrow_down.b90f11c3.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -610,12 +610,12 @@ input:checked + .toggler__label > .toggler__slider {
 .form__master {
   width: 63px;
   height: 63px;
-  background-image: url(/maestro.9384ee34.png);
+  background-image: url(maestro.9384ee34.png);
 }
 .form__visa {
   width: 63px;
   height: 63px;
-  background-image: url(/visa.a60e6585.png);
+  background-image: url(visa.a60e6585.png);
 }
 
 .popup_thank__container {
@@ -695,7 +695,7 @@ input:checked + .toggler__label > .toggler__slider {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url("/plus_yellow.5458f657.svg");
+    background-image: url("plus_yellow.5458f657.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -712,7 +712,7 @@ input:checked + .toggler__label > .toggler__slider {
 .active_arrow {
   width: 17px;
   height: 17px;
-  background-image: url("/arrow_down.b90f11c3.svg");
+  background-image: url("arrow_down.b90f11c3.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
