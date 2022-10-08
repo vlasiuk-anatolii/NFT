@@ -1,5 +1,4 @@
 .popup_form {
-  
   &__container {
     visibility: hidden;
     opacity: 0;
@@ -31,8 +30,16 @@
     width: 786px;
     height: 750px;
     overflow: auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-noactive-circle-toggler;
+      border-radius: 30px;
+    }
     @include onDesktop {
-      height: 800px;
+      height: 900px;
     }
   }
   
