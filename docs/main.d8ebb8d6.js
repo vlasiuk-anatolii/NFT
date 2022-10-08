@@ -278,6 +278,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+window.document.location.hash = '#';
 var currentState = {
   currentId: 0,
   currentBuy: false,
@@ -410,30 +411,43 @@ var email = document.getElementById('email');
 var phone = document.getElementById('phone');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  var errors = form.querySelectorAll('.error');
 
-  for (var i = 0; i < errors.length; i += 1) {
-    errors[i].remove();
+  function clear(className) {
+    var errors = form.querySelectorAll(className);
+
+    for (var i = 0; i < errors.length; i += 1) {
+      errors[i].remove();
+    }
   }
 
-  if (!/^([a-z]+)$/.test(firstName.value) || !/^([a-z]+)$/.test(lastName.value)) {
-    var error = document.createElement('div');
-    form.appendChild(error);
-    error.classList.add('error');
+  clear('.error_phone');
+  clear('.error_name');
+  var isFirstName = /^([a-z]+)$/.test(firstName.value);
+  var isLastName = /^([a-z]+)$/.test(lastName.value);
+  var isPhone = /^\+?\d{13}$/.test(phone.value);
+
+  if (!isFirstName || !isLastName) {
+    var error = document.createElement('span');
+    var field = document.getElementById('email');
+    error.classList.add('error_name');
     error.style.color = 'red';
-    error.textContent = 'You should use only letters(fields: First Name, Last Name)';
+    error.textContent = 'Use only letters(fields: First Name, Last Name)';
+    form.insertBefore(error, field);
   }
 
-  if (!/^\+?\d{2}\s\d{3}\s\d{4}\s\d{2}\s\d{2}$/.test(phone.value)) {
-    var _error = document.createElement('div');
+  if (!isPhone) {
+    var _error = document.createElement('span');
 
-    form.appendChild(_error);
+    var _field = document.getElementById('logo-images');
 
-    _error.classList.add('error');
+    _error.classList.add('error_phone');
 
     _error.style.color = 'red';
-    _error.textContent = 'You should use pattern like this "+48 328 4870 09 27"';
-  } else {
+    _error.textContent = 'Use format "+48 328 4870 09 27"';
+    form.insertBefore(_error, _field);
+  }
+
+  if (isFirstName && isLastName && isPhone) {
     firstName.value = '';
     lastName.value = '';
     email.value = '';
@@ -534,7 +548,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59421" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54296" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
