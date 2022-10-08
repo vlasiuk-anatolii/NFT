@@ -1,5 +1,6 @@
 import products from '../api/products.json';
 
+window.document.location.hash = '#';
 const currentState = {
   currentId: 0,
   currentBuy: false,
@@ -128,27 +129,40 @@ const phone = document.getElementById('phone');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const errors = form.querySelectorAll('.error');
 
-  for (let i = 0; i < errors.length; i += 1) {
-    errors[i].remove();
+  function clear(className) {
+    const errors = form.querySelectorAll(className);
+
+    for (let i = 0; i < errors.length; i += 1) {
+      errors[i].remove();
+    }
   }
 
-  if (!((/^([a-z]+)$/).test(firstName.value)) || !((/^([a-z]+)$/).test(lastName.value))) {
-    const error = document.createElement('div');
-    form.appendChild(error);
-    error.classList.add('error');
+  clear('.error_phone');
+  clear('.error_name');
+  const isFirstName = (/^([a-z]+)$/).test(firstName.value); 
+  const isLastName =(/^([a-z]+)$/).test(lastName.value);
+  const isPhone = (/^\+?\d{13}$/).test(phone.value);
+
+  if (!(isFirstName) || !(isLastName)) {
+    const error = document.createElement('span');
+    const field = document.getElementById('email');
+    error.classList.add('error_name');
     error.style.color = 'red';
-    error.textContent = 'You should use only letters(fields: First Name, Last Name)';
+    error.textContent = 'Use only letters(fields: First Name, Last Name)';
+    form.insertBefore(error, field);
   }
 
-  if (!((/^\+?\d{2}\s\d{3}\s\d{4}\s\d{2}\s\d{2}$/).test(phone.value))) {
-    const error = document.createElement('div');
-    form.appendChild(error);
-    error.classList.add('error');
+  if (!(isPhone)) {
+    const error = document.createElement('span');
+    const field = document.getElementById('logo-images');
+    error.classList.add('error_phone');
     error.style.color = 'red';
-    error.textContent = 'You should use pattern like this "+48 328 4870 09 27"';
-  } else {
+    error.textContent = 'Use format "+48 328 4870 09 27"';
+    form.insertBefore(error, field);
+  }
+
+  if (isFirstName && isLastName && isPhone) {
     firstName.value = '';
     lastName.value = '';
     email.value = '';

@@ -23,7 +23,6 @@
     margin: 40px 120px 20px 21px;
 
     @include onDesktop {
-      margin: 72px 187px 35px 120px;
       font-size: 24px;
       line-height: 29px;
     }
@@ -37,7 +36,6 @@
     @include onDesktop {
       font-size: 24px;
       line-height: 29px;
-      margin-left: 120px;
     }
   }
 }

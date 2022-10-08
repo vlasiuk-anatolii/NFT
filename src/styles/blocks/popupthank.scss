@@ -13,6 +13,7 @@
     background-color: $color-bg-popup;
     display: flex;
     align-items: center;
+    padding: 20px;
     
     &:target {
       visibility: visible;

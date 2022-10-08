@@ -1,16 +1,28 @@
-.error {
-  position: relative;
-  bottom: 50px;
-  left: 10px;
+.error_phone  {
   @extend %bold_subtitle;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 12px;
   color: $color-text;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
   
   @include onDesktop {
-    position: relative;
-    bottom: 50px;
-    left: 89px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.error_name {
+  @extend %bold_subtitle;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text;
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+  
+  @include onDesktop {
     font-size: 18px;
     line-height: 29px;
   }
