@@ -7,7 +7,7 @@ NFT collections were implemented following [this design](https://www.figma.com/f
 Images were selected randomly.
 
 ## Implemented Tasks
-- Implemented layout with HTML/CSS/JS (without frameworks and libraries);
+- Implemented layout with pure HTML/CSS/JS;
 - Made three accordeons with smooth opening/closing;
 - A purchase form was made with validation (all 4 fields are required);
 - After purchasing one product card, it is marked as SOLD;
