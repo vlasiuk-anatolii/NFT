@@ -1,5 +1,5 @@
 # NFT collections
-- [DEMO LINK](https://vlasiuk-anatolii.github.io/oneWorldOnLine/)
+- [DEMO LINK](https://vlasiuk-anatolii.github.io/NFT/)
 
 ## Description
 NFT collections were implemented following [this design](https://www.figma.com/file/RiGokzl3GkSdM61rxPv44k/Test-Task-Markup%2FFront-end-Dev?node-id=1%3A1305).
