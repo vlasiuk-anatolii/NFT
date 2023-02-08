@@ -9,11 +9,10 @@ Images were selected randomly.
 ## Implemented Tasks
 - Implemented layout with HTML/CSS/JS (without frameworks and libraries);
 - Made three accordeons with smooth opening/closing;
-- Product card set arbitrary, accuracy as on the layout is not required;
 - A purchase form was made with validation (all 4 fields are required);
 - After purchasing one product card, it is marked as SOLD;
 - The "Hide sold posters" switch hide all cards sold;
-- Ability was implemented display the current number of cards to purchase;
+- Was implemented ability display the current number of cards to purchase;
 - Mobile design was implemented.
 
 ### Local development
